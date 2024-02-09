@@ -1,0 +1,11 @@
+{% extends 'web/base.html' %}
+{% block body %}
+    <h2>Welcome</h2>
+    <ul>
+        <li><strong>First Name:</strong> {{ member.firstname }}</li>
+        <li><strong>Last Name:</strong> {{ member.lastname }}</li>
+        <li><strong>Profile Picture:</strong> <img src="{{ member.profile_picture.url }}" alt="Profile Picture"></li>
+        <li><strong>Username:</strong> {{ member.username }}</li>
+        <li><strong>Email Id:</strong> {{ member.email }}</li>
+    </ul>
+{% endblock %}
